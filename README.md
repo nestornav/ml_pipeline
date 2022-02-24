@@ -1,10 +1,10 @@
-#ML pipeline
+# ML pipeline
 
 This little project try to show up an end-to-end machine learing pipeline.
 Machine learning are colofull and depends on the companies, project size and so on. However in this humble project I created at least the common parts.
 
 
-##Installation
+## Installation
 
 ### Virtualenvwrapper
 
