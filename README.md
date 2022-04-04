@@ -1,7 +1,8 @@
 # ML pipeline
 
-This little project try to show up an end-to-end machine learing pipeline.
-Machine learning are colofull and depends on the companies, project size and so on. However in this humble project I created at least the common parts.
+This little project try to show up an end-to-end machine learning pipeline. Try to show up a macro view of a machine learning project, not just focused in the model exploration and generation.
+Machine learning projects are colorful and depends on the companies, project size and so on. However in this humble project I created at least the common parts you will facing up.
+This pipeline isn't integrated into a specific platform such as Airflow. The solution are isolated files, that can be then extrapolated to a DAG for Airflow for example later.
 
 
 ## Installation
