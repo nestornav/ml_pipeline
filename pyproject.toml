@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ml_pipeline"
+version = "0.1.0"
+description = ""
+authors = ["Nestor Navarro <nestornav@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+tqdm = "^4.64.0"
+requests = "^2.27.1"
+click = "^8.1.2"
+
+[tool.poetry.dev-dependencies]
+ipdb = "^0.13.9"
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
