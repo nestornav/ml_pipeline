@@ -5,27 +5,30 @@ Machine learning projects are colorful and depends on the companies, project siz
 This pipeline isn't integrated into a specific platform such as Airflow. The solution are isolated files, that can be then extrapolated to a DAG for Airflow for example later.
 
 
-## Installation
+## Project Installation
 
-### Virtualenvwrapper
+This project is managed by Poetry. It is a tool for dependency management and packaging in Python.
+> Poetry provides a custom installer that will install poetry isolated from the rest of your system by vendorizing its dependencies. This is the recommended way of installing poetry.
+> You only need to install Poetry once. It will automatically pick up the current Python version and use it to create virtualenvs accordingly.
 
-```
-pip install virtualenvwrapper
-```
-Set up some env vars
-```
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Devel
-source /usr/local/bin/virtualenvwrapper.sh
-```
-Now you are ready to use it! Let's create a virtualenv
+### Installing Poetry
+
+Follow the next steps to get Poetry working on your system. For more information check their documentation [here](https://python-poetry.org/docs/#installation).
+
+#### osx / linux
 
 ```
-mkvirtualenv ml_pipe
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 ```
 
-If you are using python 2.7 as default also you can do the following command to use python3.X in your virtualenv
+Open a fresh terminal and check if all goes right
 
 ```
-mkvirtualenv $(which python3) ml_pipe
+poetry --version
+```
+
+### Project dependencies installation
+
+```
+poetry install
 ```
