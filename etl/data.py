@@ -33,7 +33,7 @@ class DataCollect:
     coin: str
 
     def is_up(self) -> bool:
-        """Return true the API is up."""
+        """Return true if the API is up."""
         r = requests.get(PING)
         return True if r.status_code == 200 else False
 
