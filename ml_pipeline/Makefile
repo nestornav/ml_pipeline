@@ -3,10 +3,10 @@ PYTHON_INTERPRETER = python3
 # COMMANDS                                                                      #
 #################################################################################
 clean:
-	rm -rf data/
+	rm -rf data
 
 make_dataset:
-	$(IPYTHON_INTERPRETER) etl/data.py \
+	$(IPYTHON_INTERPRETER) etl/etl.py \
 		--context_dir $(CONTEXT_DIR) \
 
 
