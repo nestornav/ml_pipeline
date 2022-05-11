@@ -3,3 +3,6 @@ class ETLException(Exception):
 
 class FailResponse(ETLException):
     pass
+
+class CoinGeckoDownException(ETLException):
+    pass
