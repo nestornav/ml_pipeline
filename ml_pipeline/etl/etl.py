@@ -1,8 +1,7 @@
 import typer
 
-import data
-#from .data import DataCollect, DataDump
-#from .exceptionetl import CoinGeckoDownException
+from ..data import DataCollect, DataDump
+from .exceptionetl import CoinGeckoDownException
 
 app = typer.Typer()
 
